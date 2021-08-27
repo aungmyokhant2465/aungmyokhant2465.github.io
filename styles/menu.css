@@ -1,0 +1,84 @@
+.menu-container {
+    margin-block: 3rem;
+    padding: 1rem;
+    border-top: 1px dashed rgba(65, 50, 50, 1);
+    border-bottom: 1px dashed rgba(65, 50, 50, 1);
+}
+
+/* Menu list layout */
+.menu-content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.menu-content > section {
+    flex: 1 30rem;
+    margin: 2.5vw;
+}
+
+/* Menu list style */
+.menu-container > h2, .menu-container p {
+    text-align: center;
+    margin: 10px
+}
+
+/* Menu list item */
+.menu-list li > a {
+    /* color: rgba(0, 78, 75, 1); */
+    display: inline-block;
+    width: 80%;
+    position: relative;
+    margin-block: .8rem;
+    margin-inline: 10px;
+}
+
+.menu-list li > a > em {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Add order button */
+button.add-order-btn {
+    padding: 10px;
+    background-color: unset;
+    margin-left: 1px;
+}
+
+/* main menu */
+.main-menu-content {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem;
+    border-bottom: 3px double rgba(65, 50, 50, 1);
+}
+
+.main-menu-content li {
+    flex: 1 200px;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.main-menu-content li a {
+    color: rgba(0, 78, 75, 1);
+    line-height: 1.5;
+}
+
+.main-menu-content li a:hover {
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+/* responsive */
+
+@media screen and (max-width: 679px) {
+    .menu-container {
+        padding-inline: 0;
+    }
+
+    .menu-content > section {
+        font-size: 3.5vw;
+    }
+}
+

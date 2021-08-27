@@ -1,0 +1,56 @@
+section.container {
+    margin-block: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    position: relative;
+}
+
+section.container section {
+    margin-block: 5rem;
+    margin-inline: 3vw;
+    padding-inline: 0.8rem;
+}
+
+section.container section:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1 / 3;
+    margin: 0;
+    padding: 0;
+}
+
+section.container li {
+    margin-block: 2rem;
+}
+
+section.container span:nth-child(2){
+    display: block;
+    color: rgba(128, 94, 65, 1);
+    font-size: 90%;
+}
+
+section.container section:nth-child(3) {
+    align-self: center;
+    justify-self: center;
+}
+
+/* Map */
+#map {
+    width: 100%;
+    height: 450px;
+    z-index: 1;
+}
+
+/* Review Form */
+
+
+@media screen and (max-width: 679px) {
+    section.container {
+        grid-template-columns: unset;
+    }
+
+    section.container section:nth-child(1){
+        grid-row: unset;
+        grid-column: unset;
+    }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/top5.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>ZeroOne Bubble Tea</title>
+    <script src="./js/canvas.js" defer></script>
+    <script src="./js/canvas2.js" defer></script>
+    <script src="./js/toggle_nav.js" defer></script>
+</head>
+<body>
+    <nav>
+        <h3 class="shop-logo">
+            <strong class="shop-name">ZeroOne</strong><br>
+            <em class="shop-subname">Bubble Tea & Cold Drinks</em>
+        </h3>
+        <ul class="navbar-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="pages/menu.html">Menu</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="pages/about.html">About</a></li>
+        </ul>
+        <div>
+            <a href="./pages/orderCard.html" class="nav-order-btn">Order</a>
+        </div>
+        <address>
+            <p><a href="tel:09766354206">09766354206</a></p>
+            <p>Thaton, Mon state, Myanmar</p>
+        </address>
+    </nav>
+    <button class="nav-btn">&gt;</button>
+    <main>
+        <header>
+            <div class="header-container">
+                <h1>ZeroOne</h1>
+                <h2>Bubble Tea & Cold Drinks</h2>
+                <p>Drink good quality cold drinks and get refreshing new energy.</p>
+                <div>
+                    <a class="order-btn btn" href="./pages/orderCard.html">Your Order <span class="indicator">13</span></a>
+                </div>
+            </div>
+            <canvas id="header-canvas"></canvas>
+        </header>
+        <section class="container">
+            <article>
+                <div class="home-canvas-container">
+                    <canvas id="home-canvas-1"></canvas>
+                </div>
+                <div class="news">
+                    <div class="news-content">
+                        <div class="news-image-container">
+                            <img src="./assets/images/straw-milk-tea.jpg" alt="">
+                        </div>
+                        <article>
+                            <h2>Our new menu</h2>
+                            <p>If you like <em>strawberry flavor</em> or want to try it, you can order our <strong>Strawberry milk tea</strong> at our shop <em>now</em>.</p>
+                            <a class="btn small-order-btn" href="./pages/itemDetail.html"><em>Just Order!</em></a>
+                        </article>
+                    </div>
+                </div>
+            </article>
+            <article class="top5-container">
+                <h4>Top 5 Cold and Drink</h4>
+                <ol class="top5-list-container">
+                    <li>
+                        <a href="./pages/itemDetail.html">
+                            Thai Green Tea
+                        </a>
+                        <img src="../assets/img/small-bubble.png" alt="">
+                    </li>
+                    <li>
+                        <a href="#">
+                            Brown Sugar Milk Tea
+                        </a>
+                        <img src="../assets/img/small-bubble.png" alt="">
+                    </li>
+                    <li>
+                        <a href="#">
+                            Lemon Soda
+                        </a>
+                        <img src="../assets/img/small-bubble.png" alt="">
+                    </li>
+                    <li>
+                        <a href="#">
+                            Stawberry Milk Tea
+                        </a>
+                        <img src="../assets/img/small-bubble.png" alt="">
+                    </li>
+                    <li>
+                        <a href="#">
+                            Hony Lime Float
+                        </a>
+                        <img src="../assets/img/small-bubble.png" alt="">
+                    </li>
+                </ol>
+            </article>
+            <article class="back-color-2">
+                <section>
+                    <h2>Our Main Menu</h2>
+                    <ul class="main-menu-content">
+                        <li><a href="./pages/menu.html#milk-shake">Milk Shake</a></li>
+                        <li><a href="#">Milk Shake with Powder</a></li>
+                        <li><a href="#">Smoothie</a></li>
+                        <li><a href="#">Juice</a></li>
+                        <li><a href="./pages/menu.html#soda">Soda</a></li>
+                        <li><a href="#">Yogurt</a></li>
+                        <li><a href="#">Fruit Juice</a></li>
+                        <li><a href="#">Fruit Tea</a></li>
+                        <li><a href="#">Cheese Foam</a></li>
+                        <li><a href="./pages/menu.html#milk-tea">Milk Tea</a></li>
+                        <li><a href="./pages/menu.html#coffee">Coffee</a></li>
+                    </ul>
+                </section>
+                <article>
+                    <p>
+                        We are selling milk tea and servel of cold drinks with the <em>best</em> price and <em>good</em> taste.
+                    </p>
+                    <p>
+                        And You can order from our <a href="./pages/menu.html"><em>menu</em></a>.
+                    </p>
+                    <p>
+                        Drink and get your new ideas
+                    </p>
+                    <div class="home-canvas2-container">
+                        <canvas id="home-canvas-2"></canvas>
+                    </div>
+                </article>
+            </article>
+        </section>
+        <footer>
+            <article>
+                <h3>Contact Us</h3>
+                <address>
+                    <ul>
+                        <li><a href="tel:09766354206">09766354206</a></li>
+                        <li>Thaton, Mon state, Myanmar</li>
+                        <li></li>
+                    </ul>
+                </address>
+            </article>
+            <article>
+                <h3 class="shop-logo">
+                    <strong class="shop-name">ZeroOne</strong><br>
+                    <em class="shop-subname">Bubble Tea & Cold Drinks</em>
+                </h3>
+                <p>
+                    Drink good quality cold drinks and get refreshing new energy.
+                </p>
+            </article>
+            <article>
+                <h3>Navigation</h3>
+                <ul class="footer-nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="pages/menu.html">Menu</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                </ul>
+            </article>
+        </footer>
+    </main>
+</body>
+</html>

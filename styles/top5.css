@@ -1,0 +1,41 @@
+.top5-container {
+    margin: 2vw;
+}
+
+ol.top5-list-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    list-style-position: inside;
+    list-style-type: decimal;
+}
+
+.top5-list-container > li {
+    font-size: .8rem;
+    line-height: 1.5;
+    min-height: 5rem;
+    flex: 1 200px;
+    background-color: rgba(243, 211, 183, 1);
+    margin: 5px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    border-bottom: 2px solid rgba(30, 132, 127, 1);
+    box-shadow: 1px 1px 5px rgba(65, 50, 50, 1);
+    position: relative;
+}
+
+.top5-list-container > li span {
+    display: inline-block;
+    max-width: 60%;
+}
+
+.top5-list-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: -30px;
+    right: 5px;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/orderCard.css">
+    <link rel="stylesheet" href="../styles/form_controls.css">
+    <title>ZeroOne Bubble Tea | Order Card</title>
+    <script src="../js/canvas.js" defer></script>
+    <script src="../js/toggle_nav.js" defer></script>
+    <script src="../js/itemDetailForm.js" defer></script>
+</head>
+<body>
+    <nav>
+        <h3 class="shop-logo">
+            <strong class="shop-name">ZeroOne</strong><br>
+            <em class="shop-subname">Bubble Tea & Cold Drinks</em>
+        </h3>
+        <ul class="navbar-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/menu.html">Menu</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+        </ul>
+        <div>
+            <a href="#" class="nav-order-btn">Order</a>
+        </div>
+        <address>
+            <p><a href="tel:09766354206">09766354206</a></p>
+            <p>Thaton, Mon state, Myanmar</p>
+        </address>
+    </nav>
+    <button class="nav-btn">&gt;</button>
+    <main>
+        <header>
+            <div class="header-container">
+                <h1>ZeroOne</h1>
+                <h2>Bubble Tea & Cold Drinks</h2>
+                <p>Drink good quality cold drinks and get refreshing new energy.</p>
+                <div>
+                    <a class="order-btn btn" href="#">Your Order <span class="indicator">13</span></a>
+                </div>
+            </div>
+            <canvas id="header-canvas"></canvas>
+        </header>
+        <section class="container">
+            <section>
+                <h2>Order Card</h2>
+                <table>
+                    <caption>Your order list.</caption>
+                    <colgroup>
+                        <col>
+                        <col class="mid-table-part">
+                        <col class="mid-table-part">
+                        <col class="mid-table-part">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Drink Name</th>
+                            <th>Quantity</th>
+                            <th>price <em>(MMK)</em></th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>1</td>
+                            <td>Green Tai Tea</td>
+                            <td>3</td>
+                            <td>3000</td>
+                            <td>
+                                <button class="btn btn-primary" title="Adjust">A</button>
+                                <button class="btn btn-danger" title="Remove">R</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Passion Soda</td>
+                            <td>3</td>
+                            <td>3000</td>
+                            <td>
+                                <button class="btn btn-primary" title="Adjust">A</button>
+                                <button class="btn btn-danger" title="Remove">R</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Strawberry Milk Tea</td>
+                            <td>2</td>
+                            <td>2000</td>
+                            <td>
+                                <button class="btn btn-primary" title="Adjust">A</button>
+                                <button class="btn btn-danger" title="Remove">R</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="3" scope="row">Tottal</th>
+                            <td colspan="2">8000<span>MMK</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <h3>Adjust your Green Tai Tea</h3>
+                <form action="#" novalidate>
+                    <p class="form-info">Required fields are labelled with "Required".</p>
+                    <div>
+                        <label for="sugar-level">Sugar Level</label>
+                        <input type="range" id="sugar-level" name="sugar-level" 
+                            min="25" max="100" value="75" step="25">
+                        <span></span>
+                    </div>
+                    <div>
+                        <output class="sugar-level" for="sugar-level">75%</output>
+                    </div>
+                    <div>
+                        <label for="ice-level">Ice Level</label>
+                        <input type="range" id="ice-level" name="ice-level" 
+                            min="25" max="100" value="75" step="25">
+                        <span></span>
+                    </div>
+                    <div>
+                        <output class="ice-level" for="ice-level">75%</output>
+                    </div>
+                    <div>
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" name="quantity" 
+                            min="1" max="30" value="1" required>
+                        <span></span>
+                        <span class="error"></span>
+                    </div>
+                    <div>
+                        <button title="Confirm your adjust" class="btn form-btn" type="submit">Confirm Adjust</button>
+                    </div>
+                </form>
+            </section>
+            <div>
+                <button title="Confirm this order" class="btn form-btn">Confirm Order</button>
+            </div>
+        </section>
+        <footer>
+            <article>
+                <h3>Contact Us</h3>
+                <address>
+                    <ul>
+                        <li><a href="tel:09766354206">09766354206</a></li>
+                        <li>Thaton, Mon state, Myanmar</li>
+                        <li></li>
+                    </ul>
+                </address>
+            </article>
+            <article>
+                <h3 class="shop-logo">
+                    <strong class="shop-name">ZeroOne</strong><br>
+                    <em class="shop-subname">Bubble Tea & Cold Drinks</em>
+                </h3>
+                <p>
+                    Drink good quality cold drinks and get refreshing new energy.
+                </p>
+            </article>
+            <article>
+                <h3>Navigation</h3>
+                <ul class="footer-nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/menu.html">Menu</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                </ul>
+            </article>
+        </footer>
+    </main>
+</body>
+</html>

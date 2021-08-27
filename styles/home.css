@@ -1,0 +1,116 @@
+section.container {
+    margin-block: 3rem;
+}
+
+section.container > article:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin-block: 3rem;
+}
+
+.home-canvas-container {
+    text-align: center;
+}
+
+.news {
+    height: 300px;
+}
+
+.news-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    background: linear-gradient(to bottom, rgb(255, 234, 215), rgb(185, 167, 152)); 
+    box-shadow: 1px 5px 10px rgba(65, 50, 50, 1);
+    margin: 20px;
+    margin-inline-end: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 260px;
+    padding: 10px;
+}
+
+.news-image-container {
+    /* position: relative; */
+    height: inherit;
+}
+
+.news-image-container img {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    /* position: absolute;
+    top: -50px; */
+}
+
+.news-content > article {
+    margin-inline: 10px;
+}
+
+.news-content > article p {
+    line-height: 1.5;
+}
+
+section.container > article:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 2vw;
+}
+
+/* main menu */
+.main-menu-content {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem;
+}
+
+.main-menu-content li {
+    flex: 1 200px;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.main-menu-content li a {
+    color: rgba(0, 78, 75, 1);
+    line-height: 1.5;
+}
+
+.main-menu-content li a:hover {
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.home-canvas2-container {
+    text-align: end;
+}
+
+@media screen and (max-width: 680px) {
+    section.container article:nth-of-type(1) {
+        display: block;
+    }
+
+    .news {
+        height: auto;
+    }
+
+    .news-content {
+        height: auto;
+    }
+
+    .news-image-container img  {
+        position: static;
+        height: auto;
+    }
+
+    .news-content > article {
+        font-size: 3vw;
+    }
+
+    section.container > article:nth-of-type(3) {
+        display: block;
+    }
+
+    section.container > article:nth-of-type(3) > article {
+        margin-block-start: 3rem;
+    }
+}

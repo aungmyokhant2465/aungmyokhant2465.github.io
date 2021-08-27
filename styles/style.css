@@ -1,0 +1,417 @@
+/* || general styel */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    max-height: 100vh;
+    max-width: 100%;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+   color: rgba(0, 78, 75, 1);
+}
+
+a:focus {
+    color: rgba(0, 0, 0, 1);
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+a:active {
+    outline: none;
+    color: rgba(123, 181, 171, 1);
+}
+
+/* || layout */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    position: relative;
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    max-height: 100vh;
+    overflow: auto;
+}
+
+nav, .nav-open {
+    height: 100vh;
+    display: grid; 
+    grid-template-rows: 2fr 5fr 1fr 2fr;
+}
+
+/* || Header and Main Navigation */
+
+/* For Main */
+main {
+    background-color: rgba(236, 159, 91, 1);
+    background: linear-gradient(335deg, rgba(238, 236, 234,1) 0.05%, rgba(236, 159, 91, 1) 99.95%); 
+}
+
+section.container {
+    color: rgba(0, 78, 75, 1);
+}
+
+/* For Nav bar */
+nav {
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0, 78, 75, 1);
+    color: rgba(236, 159, 91, 1);
+}
+
+nav  a {
+    color: rgba(236, 159, 91, 1);
+}
+
+.navbar-list {
+    line-height: 3;
+    text-transform: uppercase;
+}
+
+.nav-order-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid rgba(236, 159, 91, 1);
+    border-radius: 5px;
+}
+
+.nav-order-btn:hover, .nav-order-btn:focus {
+    border-color: rgba(236, 159, 91, 1);
+    background: rgba(236, 159, 91, 1);
+}
+
+.nav-order-btn:active {
+    border-color: rgba(123, 181, 171, 1);
+}
+
+.nav-btn {
+    width: 0;
+    display: none;
+}
+
+@media  screen and (max-width: 1007px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+    .nav-btn {
+        z-index: 3;
+        display: block;
+        position: absolute;
+        top: .5rem;
+        left: 0;
+        width: 2.5rem;
+        padding: 20px 5px 20px 0px;
+        line-height: 1.6;
+        background-color: rgba(255, 255, 255, .5);
+        color:rgba(30, 132, 127, 1);
+        box-shadow: 1px 5px 10px rgba(65, 50, 50, 1);
+        font-weight: bolder;
+        text-align: center;
+        border-top-right-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+    }
+
+    .nav-btn:hover, .nav-btn:focus {
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    .nav-btn:active {
+        background-color: rgba(65, 50, 50, 1);
+    }
+}
+
+.nav-open {
+    width: 280px;
+    visibility: unset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.nav-btn-close {
+    width: 0;
+    display: none;
+}
+
+/* For header */
+header {
+    max-width: 100%;
+    position: relative;
+}
+
+.header-container {
+    color: rgba(0, 78, 75, 1);
+    /* background: rgba(223, 203, 186, .2); */
+    margin: 3rem;
+    margin-right: 0;
+    padding: 3rem 1.5rem;
+    box-shadow: 1px 5px 10px rgba(65, 50, 50, 1);
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header-container > h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+
+.header-container > p {
+    width: 60%;
+    font-size: 100%;
+}
+
+.indicator {
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+    color: rgba(238, 236, 234,1);
+    background: rgba(31, 127, 190, 1);
+    border-radius: 100em;
+}
+
+.header-container div {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.header-container .order-btn {
+    margin-inline-start: 40%;
+}
+
+canvas#header-canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* .circle-1, .circle-2, .circle-3, .circle-4, .circle-5 {
+    content: "";
+    position: absolute;
+    z-index: inherit;
+}
+
+.circle-1 {
+    top: 20em;
+    right: 14em;
+    width: 8em;
+    height: 8em;
+    background-color: rgba(30, 132, 127, .5);
+    border-radius: 8em;
+}
+
+.circle-2 {
+    top: 14em;
+    right: 24em;
+    width: 5em;
+    height: 5em;
+    background-color: rgba(218, 51, 51, .5);
+    border-radius: 5em;
+}
+
+.circle-3 {
+    top: 19em;
+    right: 0em;
+    width: 7em;
+    height: 7em;
+    background-color: rgba(31, 127, 190, .5);
+    border-radius: 7em;
+}
+
+.circle-4 {
+    top: 8em;
+    right: 15em;
+    width: 3em;
+    height: 3em;
+    background-color: rgba(224, 37, 84, 0.5);
+    border-radius: 3em;
+}
+
+.circle-5 {
+    top: 1em;
+    right: 0;
+    width: 4em;
+    height: 4em;
+    background-color: rgba(145, 31, 190, .5);
+    border-radius: 4em;
+} */
+
+/* @media screen and (min-width: 891px) {
+    header {
+        width: 100%;
+        min-height: 456px;
+        background: url(assert/images/header.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    header {
+        width: 100%;
+        min-height: 456px;
+        background: url(assert/images/header2.jpg) no-repeat;
+        background-size: cover;
+    }
+} */
+
+/* Per page */
+.container h4, .container h2, .container h1 {
+    color: rgba(0, 78, 75, 1);
+}
+
+/* For footer */
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    color: rgba(0, 78, 75, 1);
+}
+
+footer a {
+    color: rgba(0, 78, 75, 1);
+}
+
+footer > article {
+    flex: 1 300px;
+    padding: 10px 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+footer > article:nth-child(2),footer >  article:nth-child(3) {
+    border-left: 1px solid rgba(65, 50, 50, 1);
+}
+
+footer li {
+    line-height: 2;
+}
+
+.footer-nav-list {
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1223px) {
+    footer > article:nth-child(3) {
+        border-left: unset;
+    }
+}
+
+@media screen and (max-width: 679px) {
+    footer > article:nth-child(2) {
+        border-left: unset;
+    }
+}
+
+/* Utility */
+strong.shop-name {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0.3em;
+}
+
+em.shop-subname {
+    color: rgba(128, 94, 65, 1);
+    font-size: 70%;
+}
+
+h3.shop-logo {
+    letter-spacing: 3px;
+}
+
+.btn {
+    display: inline-block;
+    color: rgba(0, 78, 75, 1);
+    border: 1px solid rgba(30, 132, 127, 1);
+    border-radius: 5px;
+}
+
+.btn:hover, .btn:focus {
+    border-color: rgba(30, 132, 127, 1);
+    color:rgba(0, 0, 0, 1);
+    background: rgba(30, 132, 127, 1);
+}
+
+.btn:active {
+    border-color: rgba(123, 181, 171, 1);
+    color:rgba(123, 181, 171, 1);
+}
+
+.btn-danger {
+    color: rgba(78, 5, 0, 1);
+    border: 1px solid rgba(78, 5, 0, 1);
+    background-color: unset;
+    padding: 5px 5px;
+}
+
+.btn-danger:hover, .btn-danger:focus {
+    background-color: rgb(194, 18, 6);
+}
+
+.btn-primary {
+    color: rgba(0, 78, 75, 1);
+    border: 1px solid rgba(30, 132, 127, 1);
+    background-color: unset;
+    padding: 5px 5px;
+}
+
+.text-format-1 {
+    letter-spacing: 1px;
+    word-spacing: 2.5px;
+    line-height: 2;
+}
+
+.order-btn {
+    padding: 20px 1vw;
+}
+
+.small-order-btn {
+    padding: 10px 1vw;
+}
+
+.form-btn {
+    padding: 10px 15px;
+    background: rgba(236, 159, 91, 1);
+    line-height: 1.5;
+    margin-block: 10px;
+}
+
+.back-color-1 {
+    background-color: rgb(255, 216, 184);
+}
+
+.back-color-2 {
+    background-color: rgb(228, 201, 179);
+}
+
+.make-btn {
+    cursor: pointer;
+}

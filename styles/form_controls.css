@@ -1,0 +1,71 @@
+input, textarea, label {
+    display: block;
+    width: 100%;
+}
+
+form > p.form-info {
+    text-align: end;
+}
+
+form > div {
+    display: flex;
+    flex-flow: row wrap;
+    margin-block-end: 25px;
+}
+
+input[type='text'], input[type='number'], textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-block: 10px;
+    padding: 10px;
+    border: 2px solid rgba(128, 94, 65, 1);
+    border-radius: 5px;
+    line-height: 1.5;
+    background-color: unset;
+    box-shadow: inset 2px 2px 3px #aaa;
+}
+
+input[type='text']:focus, input[type='number']:focus, textarea:focus {
+    border: 2px solid rgba(236, 159, 91, 1);
+    outline: none;
+}
+
+form > div span {
+    position: relative;
+}
+
+form > div span:not(.error):before {
+    content: 'Required';
+    font-size: 80%;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    padding: 5px 10px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(128, 94, 65, 1);
+}
+
+/* This is our style for the invalid fields */
+input:focus:invalid, textarea:focus:invalid {
+    outline: none;
+    border-color: rgba(255, 0, 0, 1);
+}
+
+/* This is the style of our error messages */
+.error {
+    width  : 100%;
+    padding: 0;
+
+    font-size: 80%;
+    color: rgb(156, 0, 0);
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+div.form-btn-container {
+    justify-content: flex-end;
+}
