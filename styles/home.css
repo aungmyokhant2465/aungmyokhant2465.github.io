@@ -68,6 +68,7 @@ section.container > article:nth-of-type(3) {
     flex: 1 200px;
     list-style-type: circle;
     list-style-position: inside;
+    margin-block-end: 1rem;
 }
 
 .main-menu-content li a {

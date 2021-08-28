@@ -26,10 +26,10 @@ ol.top5-list-container {
     position: relative;
 }
 
-.top5-list-container > li span {
+/* .top5-list-container > li span {
     display: inline-block;
     max-width: 60%;
-}
+} */
 
 .top5-list-container img {
     max-width: 100%;
@@ -38,4 +38,13 @@ ol.top5-list-container {
     position: absolute;
     top: -30px;
     right: 5px;
+}
+
+.top5-list-container a {
+    display: inline-block;
+    width: calc(100% - 65px);
+    margin-inline-start: 16px;
+    margin-block-start: 10px;
+    padding: 5px;
+    text-align: center;
 }

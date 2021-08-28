@@ -1,7 +1,13 @@
 /* || general styel */
 
+@font-face {
+    font-family: 'Merienda';
+    src: url("../assets/font/Merienda-Bold.ttf");
+  }
+
 * {
     box-sizing: border-box;
+    font-family: 'Merienda', cursive;
 }
 
 html {
@@ -89,7 +95,7 @@ nav  a {
 
 .nav-order-btn {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border: 1px solid rgba(236, 159, 91, 1);
     border-radius: 5px;
 }
@@ -168,7 +174,7 @@ header {
 
 .header-container {
     color: rgba(0, 78, 75, 1);
-    /* background: rgba(223, 203, 186, .2); */
+    /* background: rgba(223, 203, 186, .3); */
     margin: 3rem;
     margin-right: 0;
     padding: 3rem 1.5rem;
@@ -182,11 +188,17 @@ header {
 .header-container > h1 {
     font-size: 3em;
     margin-bottom: 0.3em;
+    letter-spacing: 0.1em;
+    text-shadow: -4px 2px 1px rgba(236, 159, 91, 1);
 }
 
 .header-container > p {
     width: 60%;
     font-size: 100%;
+}
+
+.header-container > h2 {
+    text-shadow: -3px 1px 1px rgba(236, 159, 91, 1);
 }
 
 .indicator {
@@ -414,4 +426,10 @@ h3.shop-logo {
 
 .make-btn {
     cursor: pointer;
+}
+
+/* Icons */
+.icons {
+    position: relative;
+    bottom: -3px;
 }

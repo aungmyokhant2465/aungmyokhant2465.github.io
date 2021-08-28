@@ -23,11 +23,11 @@
 
     image.onload = function() {
         ctx.drawImage(image, 0, 60, 460, 495, 220, 10, 368, 392);
-        drawCircle('rgba(30, 132, 127, 1)', 330, 330, 60)
+        drawCircle('rgba(204, 181, 20, 1)', 330, 330, 60)
         drawCircle('rgba(218, 51, 51, 1)', 630, 300, 70)
         drawCircle('rgba(145, 0, 123, 1)', 380, 100, 20)
         drawCircle('rgba(31, 127, 190, 1)', 280, 80, 40)
-        drawCircle('rgba(145, 31, 190, 1)', 600, 10, 55)
+        drawCircle('rgba(30, 132, 127, 1)', 600, 10, 55)
         drawCircle('rgba(75, 145, 0, 1)', 600, 100, 10)
         drawCircle('rgba(135, 94, 5, 1)', 100, 70, 15)
         drawCircle('rgba(100, 88, 73, 1)', 180, 250, 20)

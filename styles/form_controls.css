@@ -23,6 +23,7 @@ input[type='text'], input[type='number'], textarea {
     line-height: 1.5;
     background-color: unset;
     box-shadow: inset 2px 2px 3px #aaa;
+    box-sizing: border-box;
 }
 
 input[type='text']:focus, input[type='number']:focus, textarea:focus {
@@ -68,4 +69,24 @@ input:focus:invalid, textarea:focus:invalid {
 
 div.form-btn-container {
     justify-content: flex-end;
+}
+
+/* Input:number btn */
+.increase-btn, .decrease-btn {
+    font-size: 1.5rem;
+    background: unset;
+    width: 50px;
+    height: 48px;
+    margin-block: 10px;
+    margin-inline: 20px;
+    border-radius: 50px;
+}
+
+.increase-btn:active, .decrease-btn:active {
+    background:rgba(123, 181, 171, 1);
+}
+
+input[type='number'] {
+    display: inline-block;
+    width: 80px;
 }

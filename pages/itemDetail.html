@@ -26,7 +26,7 @@
             <li><a href="about.html">About</a></li>
         </ul>
         <div>
-            <a href="#" class="nav-order-btn">Order</a>
+            <a href="./cart.html" class="nav-order-btn" title="Order Cart"><img class="icons" src="../assets/icons/shopping_cart_black_24dp.svg"><span class="indicator">13</span></a>
         </div>
         <address>
             <p><a href="tel:09766354206">09766354206</a></p>
@@ -41,7 +41,7 @@
                 <h2>Bubble Tea & Cold Drinks</h2>
                 <p>Drink good quality cold drinks and get refreshing new energy.</p>
                 <div>
-                    <a class="order-btn btn" href="#">Your Order <span class="indicator">13</span></a>
+                    <a class="order-btn btn" href="./cart.html" title="Order Cart"><img class="icons" src="../assets/icons/shopping_cart_black_24dp.svg"><span class="indicator">13</span></a>
                 </div>
             </div>
             <canvas id="header-canvas"></canvas>
@@ -92,9 +92,11 @@
                         </div>
                         <div>
                             <label for="quantity">Quantity</label>
+                            <button class="btn decrease-btn" type="button" disabled>-</button>
                             <input type="number" id="quantity" name="quantity" 
-                                min="1" max="30" value="1" required>
+                                min="1" max="30" value="1" required readonly>
                             <span></span>
+                            <button class="btn increase-btn" type="button">+</button>
                             <span class="error"></span>
                         </div>
                         <div>
