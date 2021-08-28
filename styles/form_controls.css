@@ -75,10 +75,10 @@ div.form-btn-container {
 .increase-btn, .decrease-btn {
     font-size: 1.5rem;
     background: unset;
-    width: 50px;
+    width: 48px;
     height: 48px;
     margin-block: 10px;
-    margin-inline: 20px;
+    margin-inline: 5px;
     border-radius: 50px;
 }
 
