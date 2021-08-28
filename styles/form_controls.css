@@ -5,6 +5,7 @@ input, textarea, label {
 
 form > p.form-info {
     text-align: end;
+    margin-block-end: 1.5rem;
 }
 
 form > div {
@@ -56,7 +57,6 @@ input:focus:invalid, textarea:focus:invalid {
 .error {
     width  : 100%;
     padding: 0;
-
     font-size: 80%;
     color: rgb(156, 0, 0);
     border-radius: 0 0 5px 5px;
@@ -88,5 +88,5 @@ div.form-btn-container {
 
 input[type='number'] {
     display: inline-block;
-    width: 80px;
+    width: 100px;
 }

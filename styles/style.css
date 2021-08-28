@@ -433,3 +433,9 @@ h3.shop-logo {
     position: relative;
     bottom: -3px;
 }
+
+.icons-sm {
+    bottom: -2px;
+    width: 16px;
+    height: 16px;
+}
